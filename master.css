@@ -8,6 +8,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: #000000;
+  background-color: #B1D4E0;
 }
 p {
   font-size: 1em;
@@ -17,23 +18,95 @@ h1 {
 }
 h2 {
   font-size: 1.8em;
+  margin: 5px;
 }
 h3 {
   font-size: 1.6em;
 }
 /*main layout*/
 #header {
-  border-width: 2px 0 2px 0;
-  border-style: solid;
   margin: 0 0 5px 0;
 }
 #tribute-info {
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
-  width: 50%;
-  margin: 5px 0 5px 0;
+  border-color: #0C2D48;
+  border-radius: 10px;
+  max-width: 750px;
+  margin: 5px auto 5px auto;
 }
 #footer {
-  border-width: 2px 0 2px 0;
-  border-style: solid;
+
+}
+#img-div {
+  max-width: 750px;
+  margin: auto;
+  position: relative;
+}
+#img-div img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin: auto;
+  display: block;
+  height: auto;
+}
+#title {
+  font-size: 3em;
+  color: #0C2D48;
+  position: absolute;
+  top: 12px;
+  left: 10px;
+}
+#title-two {
+  font-size: 3em;
+  color: #0C2D48;
+  position: absolute;
+  top: 60px;
+  left: 10%;
+}
+#img-div .header-quote {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #0C2D48;
+  position: absolute;
+  bottom: 12px;
+  left: 10px;
+  max-width: 42%;
+}
+#footer-div {
+  max-width: 750px;
+  margin: auto;
+}
+/*phone size media query*/
+@media only screen and (max-width: 414px) {
+  #title {
+    font-size: 2.1em;
+  }
+  #title-two {
+    font-size: 2.1em;
+    top: 45px;
+  }
+  #img-div .header-quote {
+    font-size: 0.7em;
+  }
+}
+/*tribute info section*/
+.heading-container {
+  text-align: center;
+}
+.tribute-story-container {
+  display: flex;
+  height: 500px;
+  justify-content: center;
+}
+.year-box {
+  width: 20%;
+  height: 50%;
+  background-color: pink;
+}
+.story-box {
+  width: 60%;
+  height: 50%;
+  margin-left: 5%;
+  background-color: blue;
 }
