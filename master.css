@@ -7,7 +7,7 @@
 /*text*/
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: #000000;
+  color: #0C2D48;
   background-color: #B1D4E0;
 }
 p {
@@ -15,6 +15,7 @@ p {
 }
 h1 {
   font-size: 2em;
+  margin: 5px;
 }
 h2 {
   font-size: 1.8em;
@@ -22,25 +23,25 @@ h2 {
 }
 h3 {
   font-size: 1.6em;
+  margin: 5px;
 }
 /*main layout*/
 #header {
   margin: 0 0 5px 0;
 }
 #tribute-info {
-  border-width: 2px;
-  border-style: solid;
-  border-color: #0C2D48;
+  background-color: #E8EEF1;
   border-radius: 10px;
   max-width: 750px;
-  margin: 5px auto 5px auto;
+  margin: 5px auto;
+  padding: 5px 0;
 }
 #footer {
 
 }
 #img-div {
   max-width: 750px;
-  margin: auto;
+  margin: 5px auto 0 auto;
   position: relative;
 }
 #img-div img {
@@ -55,7 +56,7 @@ h3 {
   color: #0C2D48;
   position: absolute;
   top: 12px;
-  left: 10px;
+  left: 5px;
 }
 #title-two {
   font-size: 3em;
@@ -77,6 +78,68 @@ h3 {
   max-width: 750px;
   margin: auto;
 }
+/*tribute info section*/
+.heading-container {
+  text-align: center;
+}
+.intro-container {
+  width: 85%;
+  margin: 0 auto 5px auto;
+}
+.intro-container p {
+  margin: 5px 0 10px 0;
+}
+.tribute-story-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px 30px 0px;
+}
+.year-box {
+  width: 20%;
+  position: relative;
+  border-right: 4px dashed #2E8BC0;
+}
+.story-box {
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  width: 60%;
+  margin-left: 5%;
+  background-color: #2E8BC0;
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #2E8BC0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+h2.start-year {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-60%, -50%);
+}
+h2.end-year {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translate(-60%, 50%);
+}
+.story-box ul {
+  color: #fff;
+  margin: 10px 10px 10px 0;
+  padding-left: 20px;
+  list-style-position: outside;
+}
+#footer p {
+  text-align: center;
+  font-size: 0.8em;
+}
 /*phone size media query*/
 @media only screen and (max-width: 414px) {
   #title {
@@ -89,24 +152,6 @@ h3 {
   #img-div .header-quote {
     font-size: 0.7em;
   }
-}
-/*tribute info section*/
-.heading-container {
-  text-align: center;
-}
-.tribute-story-container {
-  display: flex;
-  height: 500px;
-  justify-content: center;
-}
-.year-box {
-  width: 20%;
-  height: 50%;
-  background-color: pink;
-}
-.story-box {
-  width: 60%;
-  height: 50%;
-  margin-left: 5%;
-  background-color: blue;
+  .year-box {
+    border-right: none;
 }
