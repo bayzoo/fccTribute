@@ -6,9 +6,13 @@
 }
 /*text*/
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Slab', serif;
   color: #0C2D48;
   background-color: #B1D4E0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 p {
   font-size: 1em;
@@ -36,9 +40,6 @@ h3 {
   margin: 5px auto;
   padding: 5px 0;
 }
-#footer {
-
-}
 #img-div {
   max-width: 750px;
   margin: 5px auto 0 auto;
@@ -53,6 +54,7 @@ h3 {
 }
 #title {
   font-size: 3em;
+  font-weight: bold;
   color: #0C2D48;
   position: absolute;
   top: 12px;
@@ -60,6 +62,7 @@ h3 {
 }
 #title-two {
   font-size: 3em;
+  font-weight: bold;
   color: #0C2D48;
   position: absolute;
   top: 60px;
@@ -133,24 +136,50 @@ h2.end-year {
 .story-box ul {
   color: #fff;
   margin: 10px 10px 10px 0;
-  padding-left: 20px;
+  padding-left: 30px;
   list-style-position: outside;
 }
+.button-container {
+  width: fit-content;
+  margin: 10px auto;
+}
+.wiki-button {
+  background-color: #0C2D48;
+  width: fit-content;
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+}
+.wiki-button:hover {
+  background-color: #145DA0;
+}
+/*footer*/
 #footer p {
   text-align: center;
   font-size: 0.8em;
 }
 /*phone size media query*/
+@media only screen and (max-width: 525px) {
+  #title-two {
+    left: 8%;
+  }
+  #img-div .header-quote {
+    font-size: 1em;
+  }
+}
+
 @media only screen and (max-width: 414px) {
   #title {
+    top: 2px;
     font-size: 2.1em;
   }
   #title-two {
     font-size: 2.1em;
-    top: 45px;
+    top: 37px;
+    left: 7%;
   }
   #img-div .header-quote {
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
   .year-box {
     border-right: none;
