@@ -103,14 +103,14 @@ h3 {
   border-right: 4px dashed #2E8BC0;
 }
 .story-box {
-  border-top-right-radius: 40px;
-  border-bottom-right-radius: 40px;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
   width: 60%;
   margin-left: 5%;
   background-color: #2E8BC0;
   box-shadow: 10px 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
-.arrow-down {
+.arrow {
   width: 0;
   height: 0;
   border-left: 20px solid transparent;
@@ -181,6 +181,53 @@ h2.end-year {
   #img-div .header-quote {
     font-size: 0.8em;
   }
+  .tribute-story-container {
+    flex-direction: column;
+    align-items: center;
+  }
   .year-box {
-    border-right: none;
+    width: 85%;
+    position: static;
+    border-right: 0;
+    border-bottom: 4px dashed #2E8BC0;
+  }
+  .story-box {
+    border-radius: 35px;
+    width: 85%;
+    margin-left: 0;
+    margin-top: 20px;
+    background-color: #2E8BC0;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  .year-box-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .arrow {
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #2E8BC0;
+    border-right: 0;
+    position: static;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+  h2.start-year {
+    position: static;
+    top: 0;
+    left: 0;
+    transform: none;
+    margin-right: 10px;
+  }
+  h2.end-year {
+    position: static;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    margin-left: 10px;
+  }
 }
