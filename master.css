@@ -99,7 +99,10 @@ h3 {
 }
 .year-box {
   width: 20%;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   border-right: 4px dashed #2E8BC0;
 }
 .story-box {
@@ -113,25 +116,13 @@ h3 {
 .arrow {
   width: 0;
   height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid #2E8BC0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%)
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 30px solid #2E8BC0;
+  margin: 0 auto;
 }
-h2.start-year {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-60%, -50%);
-}
-h2.end-year {
-  position: absolute;
-  bottom: 30%;
-  left: 50%;
-  transform: translate(-60%, 50%);
+.arrow-container {
+  margin: 20px 0;
 }
 .story-box ul {
   color: #fff;
@@ -158,7 +149,7 @@ h2.end-year {
   text-align: center;
   font-size: 0.8em;
 }
-/*phone size media query*/
+/*title adjustment only media query*/
 @media only screen and (max-width: 525px) {
   #title-two {
     left: 8%;
@@ -167,7 +158,7 @@ h2.end-year {
     font-size: 1em;
   }
 }
-
+/*phone size media query*/
 @media only screen and (max-width: 414px) {
   #title {
     top: 2px;
@@ -187,7 +178,6 @@ h2.end-year {
   }
   .year-box {
     width: 85%;
-    position: static;
     border-right: 0;
     border-bottom: 4px dashed #2E8BC0;
   }
@@ -199,7 +189,7 @@ h2.end-year {
     background-color: #2E8BC0;
     box-shadow: 10px 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   }
-  .year-box-mobile {
+  .year-box {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -211,23 +201,8 @@ h2.end-year {
     border-bottom: 15px solid transparent;
     border-left: 15px solid #2E8BC0;
     border-right: 0;
-    position: static;
-    top: 0;
-    left: 0;
-    transform: none;
   }
-  h2.start-year {
-    position: static;
-    top: 0;
-    left: 0;
-    transform: none;
-    margin-right: 10px;
-  }
-  h2.end-year {
-    position: static;
-    bottom: 0;
-    left: 0;
-    transform: none;
-    margin-left: 10px;
+  .arrow-container {
+    margin: 0 20px 10px 20px;
   }
 }
