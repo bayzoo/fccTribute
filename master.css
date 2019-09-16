@@ -125,6 +125,7 @@ h3 {
   margin: 20px 0;
 }
 .story-box ul {
+  font-size: 1em;
   color: #fff;
   margin: 10px 10px 10px 0;
   padding-left: 30px;
@@ -144,6 +145,11 @@ h3 {
 .wiki-button:hover {
   background-color: #145DA0;
 }
+.video {
+  max-width: 520px;
+  max-height: 315px;
+  margin: 0 auto;
+}
 /*footer*/
 #footer p {
   text-align: center;
@@ -160,6 +166,15 @@ h3 {
 }
 /*phone size media query*/
 @media only screen and (max-width: 414px) {
+  h2 {
+    font-size: 1.7em;
+  }
+  p {
+    font-size: 0.9em;
+  }
+  .story-box ul {
+    font-size: 0.9em;
+  }
   #title {
     top: 2px;
     font-size: 2.1em;
@@ -184,7 +199,6 @@ h3 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
     padding-bottom: 10px;
   }
   .story-box {
