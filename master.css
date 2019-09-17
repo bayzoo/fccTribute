@@ -11,8 +11,7 @@ body {
   background-color: #B1D4E0;
 }
 a {
-  text-decoration: none;
-  color: inherit;
+
 }
 p {
   font-size: 1em;
@@ -85,17 +84,17 @@ h3 {
 .heading-container {
   text-align: center;
 }
-.intro-container {
+.text-container {
   width: 85%;
   margin: 0 auto 5px auto;
 }
-.intro-container p {
+.text-container p {
   margin: 5px 0 10px 0;
 }
 .tribute-story-container {
   display: flex;
   justify-content: center;
-  margin: 30px 0px 30px 0px;
+  margin: 10px 0px 30px 0px;
 }
 .year-box {
   width: 20%;
@@ -133,7 +132,11 @@ h3 {
 }
 .button-container {
   width: fit-content;
-  margin: 10px auto;
+  margin: 20px auto;
+}
+.button-container a {
+  text-decoration: none;
+  color: inherit;
 }
 .wiki-button {
   background-color: #0C2D48;
