@@ -10,9 +10,6 @@ body {
   color: #0C2D48;
   background-color: #B1D4E0;
 }
-a {
-
-}
 p {
   font-size: 1em;
 }
@@ -117,7 +114,8 @@ h3 {
   height: 0;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
-  border-top: 30px solid #2E8BC0;
+  border-top: 30px solid #F83839;
+  opacity: 0.9;
   margin: 0 auto;
 }
 .arrow-container {
@@ -130,8 +128,11 @@ h3 {
   padding-left: 30px;
   list-style-position: outside;
 }
+.story-box li {
+  margin: 0 0 5px 0;
+}
 .button-container {
-  width: fit-content;
+  display: table;
   margin: 20px auto;
 }
 .button-container a {
@@ -139,14 +140,15 @@ h3 {
   color: inherit;
 }
 .wiki-button {
-  background-color: #0C2D48;
-  width: fit-content;
+  background-color: #F83839;
   padding: 10px;
   color: #fff;
   border-radius: 10px;
+  opacity: 0.9;
 }
 .wiki-button:hover {
-  background-color: #145DA0;
+  background-color: #F83839;
+  opacity: 0.6;
 }
 .video {
   max-width: 520px;
@@ -222,3 +224,21 @@ h3 {
     margin: 0 20px;
   }
 }
+@media only screen and (max-width: 320px) {
+    h2 {
+      font-size: 1.7em;
+    }
+    #title {
+      top: 0px;
+      font-size: 1.8em;
+    }
+    #title-two {
+      font-size: 1.8em;
+      top: 32px;
+      left: 7%;
+    }
+    #img-div .header-quote {
+      font-size: 0.7em;
+      bottom: 6px;
+    }
+  }
